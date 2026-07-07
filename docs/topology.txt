@@ -1,0 +1,40 @@
+                                 Internet
+                    +----------------+----------------+
+                    |                                 |
+                  ISP-A                           ISP-B
+                    |                                 |
+                    +-----------+   +-----------------+
+                                |   |
+                +-----------------------------------------+
+                |       Internet Edge - Iron Creek        |
+                |     INTERNET-EDGE-IRONCREEK-01          |
+                |     INTERNET-EDGE-IRONCREEK-02          |
+                +-----------------------------------------+
+                                 |
+                                 |
+=========================== ForgeSpan ===========================
+                    Enterprise Backbone Network
+===============================================================
+                                 |
+                                 |
+                +-----------------------------------------+
+                |      Internet Edge - Harper Falls       |
+                |   INTERNET-EDGE-HARPERFALLS-01          |
+                |   INTERNET-EDGE-HARPERFALLS-02          |
+                +-----------------------------------------+
+                                 |
+                                 |
+                           ISP-A / ISP-B
+
+
+                         Future Connectivity
+
+                             +---------+
+                             |   AWS   |
+                             +---------+
+                                  |
+                             +---------+
+                             |  Azure  |
+                             +---------+
+
+                     (To be integrated into ForgeSpan)

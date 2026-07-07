@@ -1,0 +1,37 @@
+==========================================================
+Forge Financial Group
+Enterprise Network Standards
+==========================================================
+
+Founded:
+1938
+
+Headquarters:
+Iron Creek, Pennsylvania
+
+Primary Data Center:
+Iron Creek, PA
+
+Disaster Recovery:
+Harper Falls, VA
+
+Industry:
+Financial Services
+
+Employees:
+8,700
+
+Branches:
+142
+
+ATMs:
+310
+
+Assets:
+$38.6 Billion
+
+Primary Cloud:
+AWS
+
+Secondary Cloud:
+Azure

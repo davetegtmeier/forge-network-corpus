@@ -1,0 +1,32 @@
+ip as-path access-list 100 permit _65100$
+ip as-path access-list 200 permin _65200$
+!
+ip prefix-list CUSTOMER-PREFIXES seq 5 permit 10.0.0.0/8 le 24
+ip prefix-list BACKUP-PREFIXES seq 5 permit 172.16.0.0/16 le 24
+!
+route-map BGP-IN-FILTER permit 100
+ description Allow specific prefixes and set local preference
+ match ip address prefix-list CUSTOMER-PREFIXES
+ set local-preference 200
+ set community 65001:100
+!
+route-map BGP-IN-FILTER permit 110
+ description Allow remaining prefixes with default preference
+ match ip address prefix-list BACKUP-PREFIXES
+ set local-preference 100
+!
+route-map BGP-OUT-FILTER permit 120
+ description Advertise internal routes with community
+ match ip address prefix-list INTERNAL-ROUTES
+ set as-path prepend 65001 65001
+ set community 65001:200
+!
+route-map BGP-OUT-FILTER permit 130
+ description Set next-hop for specific interfaces
+ match interface GigabitEthernet0/0/1
+ set ip next-hop 192.168.1.1
+ set metric 100
+!
+route-map BGP-OUT-FILTER deny 30
+ description Deny all other routes
+

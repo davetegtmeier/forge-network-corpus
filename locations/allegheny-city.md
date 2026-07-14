@@ -1,4 +1,4 @@
-Iron Creek
+Allegheny City
 Population: 78,000
 
 Known for:

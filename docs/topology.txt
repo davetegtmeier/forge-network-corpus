@@ -7,8 +7,8 @@
                                 |   |
                 +-----------------------------------------+
                 |       Internet Edge - Iron Creek        |
-                |     INTERNET-EDGE-IRONCREEK-01          |
-                |     INTERNET-EDGE-IRONCREEK-02          |
+                |     INTERNET-EDGE-ALLEGHENYCITY-01      |
+                |     INTERNET-EDGE-ALLEGHENYCITY-02      |
                 +-----------------------------------------+
                                  |
                                  |
